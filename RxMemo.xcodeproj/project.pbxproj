@@ -14,9 +14,11 @@
 		30730AAD2544E1B2008ADF91 /* RxMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30730AAB2544E1B2008ADF91 /* RxMemo.xcdatamodeld */; };
 		30730AAF2544E1B4008ADF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30730AAE2544E1B4008ADF91 /* Assets.xcassets */; };
 		30730AB22544E1B4008ADF91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30730AB02544E1B4008ADF91 /* LaunchScreen.storyboard */; };
+		E9508283A779EA394B5C1679 /* Pods_RxMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EA05AA22AD8CCADCB1FE6F /* Pods_RxMemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2017FA9BFC4C637E1A0EDC3E /* Pods-RxMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.debug.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.debug.xcconfig"; sourceTree = "<group>"; };
 		30730A9F2544E1B2008ADF91 /* RxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30730AA22544E1B2008ADF91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30730AA42544E1B2008ADF91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		30730AAE2544E1B4008ADF91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30730AB12544E1B4008ADF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30730AB32544E1B4008ADF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B719B7B8EDD2632354EA9FE /* Pods-RxMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.release.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.release.xcconfig"; sourceTree = "<group>"; };
+		69EA05AA22AD8CCADCB1FE6F /* Pods_RxMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9508283A779EA394B5C1679 /* Pods_RxMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				30730AA12544E1B2008ADF91 /* RxMemo */,
 				30730AA02544E1B2008ADF91 /* Products */,
+				80D04D890D9D71F04CA0865B /* Pods */,
+				3809AC375DC13818F0576797 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = RxMemo;
 			sourceTree = "<group>";
 		};
+		3809AC375DC13818F0576797 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69EA05AA22AD8CCADCB1FE6F /* Pods_RxMemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80D04D890D9D71F04CA0865B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2017FA9BFC4C637E1A0EDC3E /* Pods-RxMemo.debug.xcconfig */,
+				4B719B7B8EDD2632354EA9FE /* Pods-RxMemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30730AB62544E1B4008ADF91 /* Build configuration list for PBXNativeTarget "RxMemo" */;
 			buildPhases = (
+				458E4EB87798AC1781D04D77 /* [CP] Check Pods Manifest.lock */,
 				30730A9B2544E1B2008ADF91 /* Sources */,
 				30730A9C2544E1B2008ADF91 /* Frameworks */,
 				30730A9D2544E1B2008ADF91 /* Resources */,
+				7FF998E4A5548A5AD6E31BE8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		458E4EB87798AC1781D04D77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FF998E4A5548A5AD6E31BE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxMemo/Pods-RxMemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxMemo/Pods-RxMemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxMemo/Pods-RxMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30730A9B2544E1B2008ADF91 /* Sources */ = {
@@ -220,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +356,7 @@
 		};
 		30730AB72544E1B4008ADF91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2017FA9BFC4C637E1A0EDC3E /* Pods-RxMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		30730AB82544E1B4008ADF91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B719B7B8EDD2632354EA9FE /* Pods-RxMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
