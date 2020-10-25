@@ -13,6 +13,7 @@
 		30730AAD2544E1B2008ADF91 /* RxMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30730AAB2544E1B2008ADF91 /* RxMemo.xcdatamodeld */; };
 		30730AAF2544E1B4008ADF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30730AAE2544E1B4008ADF91 /* Assets.xcassets */; };
 		30730AB22544E1B4008ADF91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30730AB02544E1B4008ADF91 /* LaunchScreen.storyboard */; };
+		30F0C5522545F6E700C2A6F7 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F0C5512545F6E700C2A6F7 /* Memo.swift */; };
 		E9508283A779EA394B5C1679 /* Pods_RxMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EA05AA22AD8CCADCB1FE6F /* Pods_RxMemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		30730AAE2544E1B4008ADF91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30730AB12544E1B4008ADF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30730AB32544E1B4008ADF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F0C5512545F6E700C2A6F7 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		4B719B7B8EDD2632354EA9FE /* Pods-RxMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.release.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.release.xcconfig"; sourceTree = "<group>"; };
 		69EA05AA22AD8CCADCB1FE6F /* Pods_RxMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 		30F0C54B2545F5BF00C2A6F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				30F0C5512545F6E700C2A6F7 /* Memo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				30730AA32544E1B2008ADF91 /* AppDelegate.swift in Sources */,
 				30730AA52544E1B2008ADF91 /* SceneDelegate.swift in Sources */,
 				30730AAD2544E1B2008ADF91 /* RxMemo.xcdatamodeld in Sources */,
+				30F0C5522545F6E700C2A6F7 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
