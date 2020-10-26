@@ -31,11 +31,48 @@
                     <view key="view" contentMode="scaleToFill" id="17T-0a-sx1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1yM-dH-4PU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="wY1-pp-ugp" style="IBUITableViewCellStyleDefault" id="huh-NN-KwP">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="huh-NN-KwP" id="LcP-pa-yK9">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wY1-pp-ugp">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hWG-5o-RPl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1yM-dH-4PU" secondAttribute="bottom" id="36p-Vu-kwp"/>
+                            <constraint firstItem="1yM-dH-4PU" firstAttribute="trailing" secondItem="hWG-5o-RPl" secondAttribute="trailing" id="FCm-cm-xAB"/>
+                            <constraint firstItem="1yM-dH-4PU" firstAttribute="top" secondItem="17T-0a-sx1" secondAttribute="top" id="Sb7-UC-6i6"/>
+                            <constraint firstItem="1yM-dH-4PU" firstAttribute="leading" secondItem="17T-0a-sx1" secondAttribute="leading" id="wgJ-4L-TKX"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="메모 목록" id="mEG-5d-4fA"/>
+                    <navigationItem key="navigationItem" title="메모 목록" id="mEG-5d-4fA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CFu-5T-I4d"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addButton" destination="CFu-5T-I4d" id="BuJ-mj-tUt"/>
+                        <outlet property="listTableView" destination="1yM-dH-4PU" id="vme-wQ-oQO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rc9-Ek-fIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,18 +96,42 @@
             </objects>
             <point key="canvasLocation" x="108.69565217391305" y="-534.375"/>
         </scene>
-        <!--새 메모-->
+        <!--Title-->
         <scene sceneID="wap-n1-L6S">
             <objects>
                 <viewController id="4tr-3G-ktU" customClass="MemoComposeViewController" customModule="RxMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R33-hY-2DP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TEM-SZ-BIW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4EE-Rj-lG0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TEM-SZ-BIW" firstAttribute="leading" secondItem="R33-hY-2DP" secondAttribute="leading" id="IOx-ky-E9B"/>
+                            <constraint firstAttribute="bottom" secondItem="TEM-SZ-BIW" secondAttribute="bottom" id="MNd-e7-I72"/>
+                            <constraint firstItem="TEM-SZ-BIW" firstAttribute="top" secondItem="R33-hY-2DP" secondAttribute="top" id="TZY-15-f2P"/>
+                            <constraint firstItem="TEM-SZ-BIW" firstAttribute="trailing" secondItem="4EE-Rj-lG0" secondAttribute="trailing" id="TqL-LN-nrt"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="새 메모" id="dZe-Fa-hkG"/>
+                    <navigationItem key="navigationItem" title="Title" id="NGa-87-nRg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Ttt-de-prR"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ceh-cn-Nkb"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="Ttt-de-prR" id="qqZ-Cl-FsJ"/>
+                        <outlet property="contentTextView" destination="TEM-SZ-BIW" id="QEc-WN-91L"/>
+                        <outlet property="saveButton" destination="ceh-cn-Nkb" id="pdg-Mv-9rI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPj-pl-VsG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,12 +141,6 @@
         <scene sceneID="BAr-Yg-Ies">
             <objects>
                 <viewController storyboardIdentifier="DetailVC" id="TuS-Bk-zik" customClass="MemoDetailViewController" customModule="RxMemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zqc-iU-5kD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="5KP-0t-F4w"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
                     <navigationItem key="navigationItem" title="메모 보기" id="AIa-gB-DY5"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
@@ -113,6 +168,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
