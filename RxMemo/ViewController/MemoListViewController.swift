@@ -17,7 +17,7 @@ class MemoListViewController: UIViewController, ViewModelBindableType {
     }
     
     func bindViewModel() {
-        <#code#>
+        
     }
 
 }
